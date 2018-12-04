@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console. Byebug is a built in Rails debugger.
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  
+
   # rspec test suite
   gem 'rspec-rails'
 
@@ -46,6 +46,9 @@ group :development, :test do
 
   # debugging tool
   gem 'pry'
+
+  # streamlined syntax to use in testing our validations and relationships.
+  gem 'shoulda-matchers', '~>3.1'
 end
 
 group :development do
